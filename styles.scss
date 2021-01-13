@@ -88,16 +88,25 @@ body {
                 @include flexDisplay();
             }
             footer {
+                @include flexDisplay();
+                width: 100vw;
+                height: 100px;
+                background: $main-orange;
+                color: $main-beige;
+                p {
+                    text-align: center;
+                    margin-bottom: 20px;
+                    font-size: 1.25em;
+                }
                 .contact-links {
-                    width: 100vw;
-                    height: 75px;
-                    background: $main-orange;
-                    color: $main-beige;
                     @include flexDisplay();
                     flex-direction: row;
-                    justify-content: space-evenly;
                     li {
                     @include flexDisplay();
+                    margin: 0 2.5vw;
+                    i {
+                        margin-right: 1vw;
+                    }
                     a {
                         color: $main-beige;
                         text-decoration: none;
