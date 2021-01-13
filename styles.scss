@@ -55,6 +55,61 @@ body {
                 background: $main-beige;
                 color: $main-orange;
                 @include flexDisplay();
+                h1 {
+                    font-size: 4em;
+                    margin-bottom: 1em;
+                }
+                h2 {
+                    font-size: 1.75em;
+                    font-style: italic;
+                }
+            }
+            .about {
+                background: linear-gradient(180deg, $main-beige, #fed8b1);
+                color: $main-orange;
+                width: 100vw;
+                height: 35vh;
+                @include flexDisplay();
+                justify-content: space-evenly;
+                h1 {
+                    font-weight: 800;
+                    font-size: 2em;
+                    font-style: italic;
+                }
+                p {
+                    overflow: scroll;
+                }
+            }
+            .projects {
+                width: 100vw;
+                height: 80vh;
+                background: $main-beige;
+                color: $main-orange;
+                @include flexDisplay();
+            }
+            footer {
+                .contact-links {
+                    width: 100vw;
+                    height: 75px;
+                    background: $main-orange;
+                    color: $main-beige;
+                    @include flexDisplay();
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    li {
+                    @include flexDisplay();
+                    a {
+                        color: $main-beige;
+                        text-decoration: none;
+                        font-size: 1em;
+                        &:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                }
+            
             }
         }
     }

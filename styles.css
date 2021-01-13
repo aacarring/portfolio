@@ -73,5 +73,69 @@ body .container .page-body .main-display {
   justify-content: center;
   align-items: center;
 }
+body .container .page-body .main-display h1 {
+  font-size: 4em;
+  margin-bottom: 1em;
+}
+body .container .page-body .main-display h2 {
+  font-size: 1.75em;
+  font-style: italic;
+}
+body .container .page-body .about {
+  background: linear-gradient(180deg, #FCEDDA, #fed8b1);
+  color: #EE4E34;
+  width: 100vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body .container .page-body .about h1 {
+  font-weight: 800;
+  font-size: 2em;
+  font-style: italic;
+}
+body .container .page-body .about p {
+  overflow: scroll;
+}
+body .container .page-body .projects {
+  width: 100vw;
+  height: 80vh;
+  background: #FCEDDA;
+  color: #EE4E34;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container .page-body footer .contact-links {
+  width: 100vw;
+  height: 75px;
+  background: #EE4E34;
+  color: #FCEDDA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+body .container .page-body footer .contact-links li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container .page-body footer .contact-links li a {
+  color: #FCEDDA;
+  text-decoration: none;
+  font-size: 1em;
+}
+body .container .page-body footer .contact-links li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=styles.css.map */
