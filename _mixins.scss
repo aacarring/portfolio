@@ -1,0 +1,9 @@
+$main-orange: #EE4E34;
+$main-beige: #FCEDDA;
+
+@mixin flexDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-origin: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: monospace;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+body .container nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background: #EE4E34;
+  color: #FCEDDA;
+  width: 100vw;
+  height: 125px;
+}
+body .container nav .nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 125px;
+  justify-content: flex-end;
+  margin-right: 5vw;
+  flex-wrap: wrap;
+}
+body .container nav .nav-links li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5vw;
+}
+body .container nav .nav-links li a {
+  color: #FCEDDA;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+body .container nav .nav-links li a:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  text-decoration: underline;
+}
+body .container .page-body {
+  position: absolute;
+  top: 125px;
+}
+body .container .page-body .main-display {
+  width: 100vw;
+  height: 80vh;
+  background: #FCEDDA;
+  color: #EE4E34;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
