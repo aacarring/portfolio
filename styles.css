@@ -29,7 +29,7 @@ body .container nav {
   background: #EE4E34;
   color: #FCEDDA;
   width: 100vw;
-  height: 125px;
+  height: 50px;
 }
 body .container nav .nav-links {
   display: flex;
@@ -37,7 +37,7 @@ body .container nav .nav-links {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 125px;
+  height: 50px;
   justify-content: flex-end;
   margin-right: 5vw;
   flex-wrap: wrap;
@@ -59,13 +59,23 @@ body .container nav .nav-links li a:hover {
   transform: scale(1.2);
   text-decoration: underline;
 }
+@media (max-width: 300px) {
+  body .container nav .nav-links li a {
+    font-size: 1.25em;
+  }
+}
+@media (max-width: 250px) {
+  body .container nav .nav-links li a {
+    font-size: 1em;
+  }
+}
 body .container .page-body {
   position: absolute;
-  top: 125px;
+  top: 50px;
 }
 body .container .page-body .main-display {
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
   background: #FCEDDA;
   color: #EE4E34;
   display: flex;
@@ -75,17 +85,35 @@ body .container .page-body .main-display {
 }
 body .container .page-body .main-display h1 {
   font-size: 4em;
-  margin-bottom: 1em;
+  margin: 1em;
+  max-width: 80vw;
 }
 body .container .page-body .main-display h2 {
   font-size: 1.75em;
   font-style: italic;
+  max-width: 75vw;
+}
+@media (max-width: 380px) {
+  body .container .page-body .main-display h1 {
+    font-size: 3em;
+  }
+  body .container .page-body .main-display h2 {
+    font-size: 1.25em;
+  }
+}
+@media (max-width: 280px) {
+  body .container .page-body .main-display h1 {
+    font-size: 2em;
+  }
+  body .container .page-body .main-display h2 {
+    font-size: 1em;
+  }
 }
 body .container .page-body .about {
   background: linear-gradient(180deg, #FCEDDA, #fed8b1);
   color: #EE4E34;
   width: 100vw;
-  height: 35vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,10 +123,39 @@ body .container .page-body .about {
 body .container .page-body .about h1 {
   font-weight: 800;
   font-size: 2em;
-  font-style: italic;
+  text-decoration: underline;
 }
 body .container .page-body .about p {
+  width: 50vw;
+  line-height: 3;
   overflow: scroll;
+}
+body .container .page-body .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #EE4E34;
+  color: #FCEDDA;
+  width: 100vw;
+  height: 75vh;
+}
+body .container .page-body .skills .skillset {
+  text-align: center;
+  margin-bottom: 5vh;
+  font-size: 2em;
+  text-decoration: underline;
+}
+body .container .page-body .skills .skills-list {
+  display: inline;
+  list-style-type: none;
+}
+body .container .page-body .skills .skills-list .skill {
+  text-align: left;
+  margin: 2vh auto;
+  margin-left: 5vw;
+  font-size: 1.5em;
+  justify-self: flex-start;
 }
 body .container .page-body .projects {
   width: 100vw;

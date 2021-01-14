@@ -22,11 +22,11 @@ body {
             background: $main-orange;
             color: $main-beige;
             width: 100vw;
-            height: 125px;
+            height: 50px;
             .nav-links {
                 @include flexDisplay();
                 flex-direction: row;
-                height: 125px;
+                height: 50px;
                 justify-content: flex-end;
                 margin-right: 5vw;
                 flex-wrap: wrap;
@@ -42,42 +42,92 @@ body {
                             transform: scale(1.2);
                             text-decoration: underline;
                         }
+                        @media (max-width: 300px) {
+                            font-size: 1.25em;
+                        }
+                        @media (max-width: 250px) {
+                            font-size: 1em;
+                        }
                     }
                 }
             }
         }
         .page-body {
             position: absolute;
-            top: 125px;
+            top: 50px;
             .main-display {
                 width: 100vw;
-                height: 80vh;
+                height: 90vh;
                 background: $main-beige;
                 color: $main-orange;
                 @include flexDisplay();
                 h1 {
                     font-size: 4em;
-                    margin-bottom: 1em;
+                    margin: 1em;
+                    max-width: 80vw;
                 }
                 h2 {
                     font-size: 1.75em;
                     font-style: italic;
+                    max-width: 75vw;
+                }
+                @media (max-width: 380px) {
+                    h1 {
+                        font-size: 3em;
+                    }
+                    h2 {
+                        font-size: 1.25em;
+                    }
+                }
+                @media (max-width: 280px) {
+                    h1 {
+                        font-size: 2em;
+                    }
+                    h2 {
+                        font-size: 1em;
+                    }
                 }
             }
             .about {
                 background: linear-gradient(180deg, $main-beige, #fed8b1);
                 color: $main-orange;
                 width: 100vw;
-                height: 35vh;
+                height: 75vh;
                 @include flexDisplay();
                 justify-content: space-evenly;
                 h1 {
                     font-weight: 800;
                     font-size: 2em;
-                    font-style: italic;
+                    text-decoration: underline;
                 }
                 p {
+                    width: 50vw;
+                    line-height: 3;
                     overflow: scroll;
+                }
+            }
+            .skills {
+                @include flexDisplay();
+                background: $main-orange;
+                color: $main-beige;
+                width: 100vw;
+                height: 75vh;
+                .skillset {
+                    text-align: center;
+                    margin-bottom: 5vh;
+                    font-size: 2em;
+                    text-decoration: underline;
+                }
+                .skills-list {
+                    display: inline;
+                    list-style-type: none;
+                    .skill {
+                        text-align: left;
+                        margin: 2vh auto;
+                        margin-left: 5vw;
+                        font-size: 1.5em;
+                        justify-self: flex-start;
+                    }
                 }
             }
             .projects {
