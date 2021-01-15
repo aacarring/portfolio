@@ -11,6 +11,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     font-family: monospace;
+    background: $main-beige;
     .container {
         @include flexDisplay();
         width: 100vw;
@@ -29,30 +30,30 @@ body {
                 height: 50px;
                 justify-content: flex-end;
                 margin-right: 5vw;
-                flex-wrap: wrap;
                 li {
                     @include flexDisplay();
                     margin-right: 5vw;
                     a {
                         color: $main-beige;
                         text-decoration: none;
-                        font-size: 1.5em;
+                        font-size: 1.25em;
                         &:hover {
                             cursor: pointer;
                             transform: scale(1.2);
                             text-decoration: underline;
                         }
-                        @media (max-width: 300px) {
-                            font-size: 1.25em;
-                        }
-                        @media (max-width: 250px) {
+                        @media (max-width: 346px) {
                             font-size: 1em;
+                        }
+                        @media (max-width: 277px) {
+                            font-size: .8em;
                         }
                     }
                 }
             }
         }
         .page-body {
+            @include flexDisplay();
             position: absolute;
             top: 50px;
             .main-display {
@@ -89,7 +90,7 @@ body {
                 }
             }
             .about {
-                background: linear-gradient(180deg, $main-beige, #fed8b1);
+                background: linear-gradient(180deg, $main-beige, $accent-beige);
                 color: $main-orange;
                 width: 100vw;
                 height: 75vh;
@@ -112,6 +113,7 @@ body {
                 color: $main-beige;
                 width: 100vw;
                 height: 75vh;
+                box-shadow: 1px 1px 15px grey;
                 .skillset {
                     text-align: center;
                     margin-bottom: 5vh;
@@ -123,7 +125,8 @@ body {
                     list-style-type: none;
                     .skill {
                         text-align: left;
-                        margin: 2vh auto;
+                        margin-top: 1vh;
+                        margin-bottom: 1vh;
                         margin-left: 5vw;
                         font-size: 1.5em;
                         justify-self: flex-start;
@@ -133,9 +136,14 @@ body {
             .projects {
                 width: 100vw;
                 height: 80vh;
-                background: $main-beige;
+                background: linear-gradient(180deg, $accent-beige, $main-beige);
                 color: $main-orange;
+                box-shadow: 1px 1px 15px grey;
                 @include flexDisplay();
+                .projects-header {
+                    font-size: 2em;
+                    text-decoration: underline;
+                }
             }
             footer {
                 @include flexDisplay();
@@ -154,6 +162,7 @@ body {
                     li {
                     @include flexDisplay();
                     margin: 0 2.5vw;
+                    font-weight: 500;
                     i {
                         margin-right: 1vw;
                     }

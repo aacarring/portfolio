@@ -13,6 +13,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   font-family: monospace;
+  background: #FCEDDA;
 }
 body .container {
   display: flex;
@@ -40,7 +41,6 @@ body .container nav .nav-links {
   height: 50px;
   justify-content: flex-end;
   margin-right: 5vw;
-  flex-wrap: wrap;
 }
 body .container nav .nav-links li {
   display: flex;
@@ -52,24 +52,28 @@ body .container nav .nav-links li {
 body .container nav .nav-links li a {
   color: #FCEDDA;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 body .container nav .nav-links li a:hover {
   cursor: pointer;
   transform: scale(1.2);
   text-decoration: underline;
 }
-@media (max-width: 300px) {
-  body .container nav .nav-links li a {
-    font-size: 1.25em;
-  }
-}
-@media (max-width: 250px) {
+@media (max-width: 346px) {
   body .container nav .nav-links li a {
     font-size: 1em;
   }
 }
+@media (max-width: 277px) {
+  body .container nav .nav-links li a {
+    font-size: 0.8em;
+  }
+}
 body .container .page-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 50px;
 }
@@ -139,6 +143,7 @@ body .container .page-body .skills {
   color: #FCEDDA;
   width: 100vw;
   height: 75vh;
+  box-shadow: 1px 1px 15px grey;
 }
 body .container .page-body .skills .skillset {
   text-align: center;
@@ -152,7 +157,8 @@ body .container .page-body .skills .skills-list {
 }
 body .container .page-body .skills .skills-list .skill {
   text-align: left;
-  margin: 2vh auto;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
   margin-left: 5vw;
   font-size: 1.5em;
   justify-self: flex-start;
@@ -160,12 +166,17 @@ body .container .page-body .skills .skills-list .skill {
 body .container .page-body .projects {
   width: 100vw;
   height: 80vh;
-  background: #FCEDDA;
+  background: linear-gradient(180deg, #fed8b1, #FCEDDA);
   color: #EE4E34;
+  box-shadow: 1px 1px 15px grey;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+body .container .page-body .projects .projects-header {
+  font-size: 2em;
+  text-decoration: underline;
 }
 body .container .page-body footer {
   display: flex;
@@ -195,6 +206,7 @@ body .container .page-body footer .contact-links li {
   justify-content: center;
   align-items: center;
   margin: 0 2.5vw;
+  font-weight: 500;
 }
 body .container .page-body footer .contact-links li i {
   margin-right: 1vw;
