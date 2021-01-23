@@ -165,7 +165,7 @@ body .container .page-body .skills .skills-list .skill {
 }
 body .container .page-body .projects {
   width: 100vw;
-  height: 80vh;
+  min-height: 80vh;
   background: linear-gradient(180deg, #fed8b1, #FCEDDA);
   color: #EE4E34;
   box-shadow: 1px 1px 15px grey;
@@ -177,6 +177,25 @@ body .container .page-body .projects {
 body .container .page-body .projects .projects-header {
   font-size: 2em;
   text-decoration: underline;
+}
+body .container .page-body .projects .projects-and-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body .container .page-body .projects .projects-and-info .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container .page-body .projects .projects-and-info .project img {
+  width: 50vw;
+  height: 55vh;
+  border-radius: 15px;
 }
 body .container .page-body footer {
   display: flex;

@@ -135,7 +135,7 @@ body {
             }
             .projects {
                 width: 100vw;
-                height: 80vh;
+                min-height: 80vh;
                 background: linear-gradient(180deg, $accent-beige, $main-beige);
                 color: $main-orange;
                 box-shadow: 1px 1px 15px grey;
@@ -143,6 +143,19 @@ body {
                 .projects-header {
                     font-size: 2em;
                     text-decoration: underline;
+                }
+                .projects-and-info {
+                    @include flexDisplay();
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    .project {
+                        @include flexDisplay();
+                        img {
+                            width: 50vw;
+                            height: 55vh;
+                            border-radius: 15px;
+                        }
+                    }
                 }
             }
             footer {
