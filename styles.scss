@@ -102,7 +102,7 @@ body {
                     text-decoration: underline;
                 }
                 p {
-                    width: 50vw;
+                    width: 75vw;
                     line-height: 3;
                     overflow: scroll;
                 }
@@ -135,7 +135,7 @@ body {
             }
             .projects {
                 width: 100vw;
-                min-height: 80vh;
+                min-height: 100vh;
                 background: linear-gradient(180deg, $accent-beige, $main-beige);
                 color: $main-orange;
                 box-shadow: 1px 1px 15px grey;
@@ -143,17 +143,28 @@ body {
                 .projects-header {
                     font-size: 2em;
                     text-decoration: underline;
+                    margin-top: 2em;
+                    margin-bottom: 1.5em;
                 }
                 .projects-and-info {
                     @include flexDisplay();
+                    width: 100vw;
                     flex-direction: row;
                     flex-wrap: wrap;
                     .project {
+                        margin: 2vh 2vw;
+                        width: 45vw;
+                        min-width: 300px;
+                        min-height: 175px;
                         @include flexDisplay();
                         img {
-                            width: 50vw;
-                            height: 55vh;
+                            margin: 0 auto;
+                            max-width: 100%;
+                            max-height: 100%;
                             border-radius: 15px;
+                        }
+                        p {
+                            text-align: center;
                         }
                     }
                 }

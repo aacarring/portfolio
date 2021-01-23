@@ -130,7 +130,7 @@ body .container .page-body .about h1 {
   text-decoration: underline;
 }
 body .container .page-body .about p {
-  width: 50vw;
+  width: 75vw;
   line-height: 3;
   overflow: scroll;
 }
@@ -165,7 +165,7 @@ body .container .page-body .skills .skills-list .skill {
 }
 body .container .page-body .projects {
   width: 100vw;
-  min-height: 80vh;
+  min-height: 100vh;
   background: linear-gradient(180deg, #fed8b1, #FCEDDA);
   color: #EE4E34;
   box-shadow: 1px 1px 15px grey;
@@ -177,25 +177,36 @@ body .container .page-body .projects {
 body .container .page-body .projects .projects-header {
   font-size: 2em;
   text-decoration: underline;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
 }
 body .container .page-body .projects .projects-and-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
   flex-direction: row;
   flex-wrap: wrap;
 }
 body .container .page-body .projects .projects-and-info .project {
+  margin: 2vh 2vw;
+  width: 45vw;
+  min-width: 300px;
+  min-height: 175px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 body .container .page-body .projects .projects-and-info .project img {
-  width: 50vw;
-  height: 55vh;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
   border-radius: 15px;
+}
+body .container .page-body .projects .projects-and-info .project p {
+  text-align: center;
 }
 body .container .page-body footer {
   display: flex;
