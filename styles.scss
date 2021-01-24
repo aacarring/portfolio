@@ -93,7 +93,7 @@ body {
                 background: linear-gradient(180deg, $main-beige, $accent-beige);
                 color: $main-orange;
                 width: 100vw;
-                height: 75vh;
+                height: 65vh;
                 @include flexDisplay();
                 justify-content: space-evenly;
                 h1 {
@@ -104,6 +104,7 @@ body {
                 p {
                     width: 75vw;
                     line-height: 3;
+                    font-size: 1.15em;
                     overflow: scroll;
                 }
             }
@@ -112,7 +113,7 @@ body {
                 background: $main-orange;
                 color: $main-beige;
                 width: 100vw;
-                height: 75vh;
+                height: 65vh;
                 box-shadow: 1px 1px 15px grey;
                 .skillset {
                     text-align: center;
@@ -179,6 +180,7 @@ body {
                     text-align: center;
                     margin-bottom: 20px;
                     font-size: 1.25em;
+                    font-weight: 600;
                 }
                 .contact-links {
                     @include flexDisplay();

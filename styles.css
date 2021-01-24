@@ -117,7 +117,7 @@ body .container .page-body .about {
   background: linear-gradient(180deg, #FCEDDA, #fed8b1);
   color: #EE4E34;
   width: 100vw;
-  height: 75vh;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,6 +132,7 @@ body .container .page-body .about h1 {
 body .container .page-body .about p {
   width: 75vw;
   line-height: 3;
+  font-size: 1.15em;
   overflow: scroll;
 }
 body .container .page-body .skills {
@@ -142,7 +143,7 @@ body .container .page-body .skills {
   background: #EE4E34;
   color: #FCEDDA;
   width: 100vw;
-  height: 75vh;
+  height: 65vh;
   box-shadow: 1px 1px 15px grey;
 }
 body .container .page-body .skills .skillset {
@@ -222,6 +223,7 @@ body .container .page-body footer p {
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.25em;
+  font-weight: 600;
 }
 body .container .page-body footer .contact-links {
   display: flex;
