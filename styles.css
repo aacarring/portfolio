@@ -189,6 +189,7 @@ body .container .page-body .projects .projects-and-info {
   width: 100vw;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 2em;
 }
 body .container .page-body .projects .projects-and-info .project {
   margin: 2vh 2vw;
