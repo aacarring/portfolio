@@ -205,6 +205,14 @@ body .container .page-body .projects .projects-and-info .project {
   align-items: center;
   justify-content: flex-start;
 }
+body .container .page-body .projects .projects-and-info .project a {
+  text-decoration: none;
+  color: #EE4E34;
+}
+body .container .page-body .projects .projects-and-info .project a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 body .container .page-body .projects .projects-and-info .project h1 {
   margin: 5vh auto;
 }

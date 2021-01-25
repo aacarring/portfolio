@@ -163,6 +163,14 @@ body {
                         box-shadow: 1px 3px 15px grey;
                         @include flexDisplay();
                         justify-content: flex-start;
+                        a {
+                            text-decoration: none;
+                            color: $main-orange;
+                            &:hover {
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
                         h1 {
                             margin: 5vh auto;
                         }
