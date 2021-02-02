@@ -175,22 +175,22 @@ body {
                             margin: 5vh auto;
                         }
                         img {
-                            max-width: 85%;
-                            max-height: 85%;
+                            width: 85%;
+                            height: 85%;
                             border-radius: 15px;
+                            box-shadow: 1px 1px 10px $main-orange;
+                            &:hover {
+                                transform: scale(1.025);
+                            }
                         }
                         p {
                             max-width: 85%;
-                            margin: 2.5vh auto;
+                            margin: auto;
                             font-size: 1.1em;
                             line-height: 1.5;
-                            overflow: scroll;
                         }
-                        @media (max-width: 1070px) {
-                            min-height: 87vh;
-                        }
-                        @media (max-width: 652px) {
-                            min-height: 50vh;
+                        @media (max-width: 988px) {
+                           min-height: 85vh;
                         }
                     }
                 }

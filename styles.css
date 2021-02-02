@@ -217,25 +217,23 @@ body .container .page-body .projects .projects-and-info .project h1 {
   margin: 5vh auto;
 }
 body .container .page-body .projects .projects-and-info .project img {
-  max-width: 85%;
-  max-height: 85%;
+  width: 85%;
+  height: 85%;
   border-radius: 15px;
+  box-shadow: 1px 1px 10px #EE4E34;
+}
+body .container .page-body .projects .projects-and-info .project img:hover {
+  transform: scale(1.025);
 }
 body .container .page-body .projects .projects-and-info .project p {
   max-width: 85%;
-  margin: 2.5vh auto;
+  margin: auto;
   font-size: 1.1em;
   line-height: 1.5;
-  overflow: scroll;
 }
-@media (max-width: 1070px) {
+@media (max-width: 988px) {
   body .container .page-body .projects .projects-and-info .project {
-    min-height: 87vh;
-  }
-}
-@media (max-width: 652px) {
-  body .container .page-body .projects .projects-and-info .project {
-    min-height: 50vh;
+    min-height: 85vh;
   }
 }
 body .container .page-body footer {
