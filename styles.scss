@@ -10,7 +10,7 @@ body {
     text-align: center;
     width: 100vw;
     min-height: 100vh;
-    font-family: monospace;
+    font-family: $google-font;
     background: $main-beige;
     .container {
         @include flexDisplay();
@@ -36,10 +36,10 @@ body {
                     a {
                         color: $main-beige;
                         text-decoration: none;
-                        font-size: 1.25em;
+                        font-size: 1.15em;
                         &:hover {
                             cursor: pointer;
-                            transform: scale(1.2);
+                            transform: scale(1.15);
                             text-decoration: underline;
                         }
                         @media (max-width: 346px) {
@@ -58,7 +58,7 @@ body {
             top: 50px;
             .main-display {
                 width: 100vw;
-                height: 90vh;
+                height: 100vh;
                 background: $main-beige;
                 color: $main-orange;
                 @include flexDisplay();
@@ -70,22 +70,26 @@ body {
                 h2 {
                     font-size: 1.75em;
                     font-style: italic;
-                    max-width: 75vw;
+                    max-width: 80vw;
                 }
-                @media (max-width: 380px) {
+                @media (max-width: 607px) {
                     h1 {
-                        font-size: 3em;
-                    }
-                    h2 {
-                        font-size: 1.25em;
+                        font-size: 2.75em;
+                        max-width: 95vw;
                     }
                 }
-                @media (max-width: 280px) {
+                @media (max-width: 417px) {
                     h1 {
-                        font-size: 2em;
+                        font-size: 2.5em;
+                        max-width: 95vw;
                     }
                     h2 {
-                        font-size: 1em;
+                        font-size: 1.75em;
+                    }
+                }
+                @media (max-width: 379px) {
+                    h1 {
+                        font-size: 2.25em;
                     }
                 }
             }
@@ -93,7 +97,7 @@ body {
                 background: linear-gradient(180deg, $main-beige, $accent-beige);
                 color: $main-orange;
                 width: 100vw;
-                height: 65vh;
+                min-height: 75vh;
                 @include flexDisplay();
                 justify-content: space-evenly;
                 h1 {
@@ -105,7 +109,10 @@ body {
                     width: 75vw;
                     line-height: 3;
                     font-size: 1.15em;
-                    overflow: scroll;
+                    margin: 5vh auto;
+                    @media (max-width: 396px) {
+                        font-size: 1em;
+                    }
                 }
             }
             .skills {
@@ -113,7 +120,7 @@ body {
                 background: $main-orange;
                 color: $main-beige;
                 width: 100vw;
-                height: 65vh;
+                height: 75vh;
                 box-shadow: 1px 1px 15px grey;
                 .skillset {
                     text-align: center;
@@ -175,8 +182,8 @@ body {
                             margin: 5vh auto;
                         }
                         img {
-                            width: 85%;
-                            height: 85%;
+                            width: 75%;
+                            height: 75%;
                             border-radius: 15px;
                             box-shadow: 1px 1px 10px $main-orange;
                             &:hover {
@@ -184,10 +191,11 @@ body {
                             }
                         }
                         p {
+                            overflow: scroll;
                             max-width: 85%;
                             margin: auto;
                             font-size: 1.1em;
-                            line-height: 1.5;
+                            line-height: 1.45;
                         }
                         @media (max-width: 988px) {
                            min-height: 85vh;
