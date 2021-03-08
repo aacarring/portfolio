@@ -13,7 +13,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   font-family: "Mulish", sans-serif;
-  background: #FCEDDA;
+  background: #fceedc;
 }
 body .container {
   display: flex;
@@ -28,7 +28,7 @@ body .container nav {
   top: 0;
   z-index: 1;
   background: #EE4E34;
-  color: #FCEDDA;
+  color: #fceedc;
   width: 100vw;
   height: 50px;
 }
@@ -50,7 +50,7 @@ body .container nav .nav-links li {
   margin-right: 5vw;
 }
 body .container nav .nav-links li a {
-  color: #FCEDDA;
+  color: #fceedc;
   text-decoration: none;
   font-size: 1.15em;
 }
@@ -80,7 +80,7 @@ body .container .page-body {
 body .container .page-body .main-display {
   width: 100vw;
   height: 100vh;
-  background: #FCEDDA;
+  background: #fceedc;
   color: #EE4E34;
   display: flex;
   flex-direction: column;
@@ -116,9 +116,20 @@ body .container .page-body .main-display h2 {
   body .container .page-body .main-display h1 {
     font-size: 2.25em;
   }
+  body .container .page-body .main-display h2 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 341px) {
+  body .container .page-body .main-display h1 {
+    font-size: 2em;
+  }
+  body .container .page-body .main-display h2 {
+    font-size: 1.25em;
+  }
 }
 body .container .page-body .about {
-  background: linear-gradient(180deg, #FCEDDA, #fed8b1);
+  background: linear-gradient(180deg, #fceedc, #fadfc4);
   color: #EE4E34;
   width: 100vw;
   min-height: 50vh;
@@ -151,7 +162,7 @@ body .container .page-body .skills {
   justify-content: center;
   align-items: center;
   background: #EE4E34;
-  color: #FCEDDA;
+  color: #fceedc;
   width: 100vw;
   height: 75vh;
   box-shadow: 1px 1px 15px grey;
@@ -181,7 +192,7 @@ body .container .page-body .skills .skills-list .skill i {
 body .container .page-body .projects {
   width: 100vw;
   min-height: 100vh;
-  background: linear-gradient(180deg, #fed8b1, #FCEDDA);
+  background: linear-gradient(180deg, #fadfc4, #fceedc);
   color: #EE4E34;
   box-shadow: 1px 1px 15px grey;
   display: flex;
@@ -206,8 +217,8 @@ body .container .page-body .projects .projects-and-info {
   margin-bottom: 2em;
 }
 body .container .page-body .projects .projects-and-info .project {
-  background: #FCEDDA;
-  margin: 2vh 2vw;
+  background: #F9EBDE;
+  margin: 4vh 2vw;
   width: 40vw;
   min-width: 300px;
   min-height: 95vh;
@@ -259,7 +270,7 @@ body .container .page-body footer {
   width: 100vw;
   height: 100px;
   background: #EE4E34;
-  color: #FCEDDA;
+  color: #fceedc;
 }
 body .container .page-body footer p {
   text-align: center;
@@ -286,7 +297,7 @@ body .container .page-body footer .contact-links li i {
   margin-right: 1vw;
 }
 body .container .page-body footer .contact-links li a {
-  color: #FCEDDA;
+  color: #fceedc;
   text-decoration: none;
   font-size: 1em;
 }
