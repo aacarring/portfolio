@@ -53,6 +53,7 @@ body .container nav .nav-links li a {
   color: #fceedc;
   text-decoration: none;
   font-size: 1.15em;
+  font-weight: bold;
 }
 body .container nav .nav-links li a:hover {
   cursor: pointer;
@@ -62,11 +63,6 @@ body .container nav .nav-links li a:hover {
 @media (max-width: 346px) {
   body .container nav .nav-links li a {
     font-size: 1em;
-  }
-}
-@media (max-width: 277px) {
-  body .container nav .nav-links li a {
-    font-size: 0.8em;
   }
 }
 body .container .page-body {
@@ -291,7 +287,6 @@ body .container .page-body footer .contact-links li {
   justify-content: center;
   align-items: center;
   margin: 0 2.5vw;
-  font-weight: 500;
 }
 body .container .page-body footer .contact-links li i {
   margin-right: 1vw;
@@ -300,6 +295,7 @@ body .container .page-body footer .contact-links li a {
   color: #fceedc;
   text-decoration: none;
   font-size: 1em;
+  font-weight: 600;
 }
 body .container .page-body footer .contact-links li a:hover {
   cursor: pointer;
