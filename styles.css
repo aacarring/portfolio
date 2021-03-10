@@ -289,12 +289,13 @@ body .container .page-body footer .contact-links li {
   margin: 0 2.5vw;
 }
 body .container .page-body footer .contact-links li i {
-  margin-right: 1vw;
+  margin-right: 12.5px;
+  font-size: 1.1em;
 }
 body .container .page-body footer .contact-links li a {
   color: #fceedc;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.05em;
   font-weight: 600;
 }
 body .container .page-body footer .contact-links li a:hover {
