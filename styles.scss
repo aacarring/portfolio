@@ -64,6 +64,24 @@ body {
                     font-size: 4em;
                     margin: 1em;
                     max-width: 80vw;
+                    .wave {
+                        animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+                        animation-duration: 2.5s;        /* Change to speed up or slow down */
+                        animation-iteration-count: infinite;  /* Never stop waving :) */
+                        transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+                        display: inline-block;
+                      }
+                      
+                      @keyframes wave-animation {
+                          0% { transform: rotate( 0deg) }
+                         10% { transform: rotate(14deg) } 
+                         20% { transform: rotate(-8deg) }
+                         30% { transform: rotate(14deg) }
+                         40% { transform: rotate(-4deg) }
+                         50% { transform: rotate(10deg) }
+                         60% { transform: rotate( 0deg) } 
+                        100% { transform: rotate( 0deg) }
+                      }
                 }
                 h2 {
                     font-size: 1.75em;
@@ -114,6 +132,9 @@ body {
                     font-weight: 800;
                     font-size: 2em;
                     text-decoration: underline;
+                    @media (max-width: 379px) {
+                        font-size: 1.5em;
+                    }
                 }
                 p {
                     width: 75vw;
@@ -137,6 +158,9 @@ body {
                     margin-bottom: 5vh;
                     font-size: 2em;
                     text-decoration: underline;
+                    @media (max-width: 379px) {
+                        font-size: 1.5em;
+                    }
                 }
                 .skills-list {
                     display: inline;
@@ -148,6 +172,9 @@ body {
                         margin-left: 5vw;
                         font-size: 1.5em;
                         justify-self: flex-start;
+                        @media (max-width: 379px) {
+                            font-size: 1.25em;
+                        }
                         i {
                             width: 30px;
                             margin-right: 10px;
@@ -167,6 +194,9 @@ body {
                     text-decoration: underline;
                     margin-top: 2em;
                     margin-bottom: 1.5em;
+                    @media (max-width: 379px) {
+                        font-size: 1.5em;
+                    }
                 }
                 .projects-and-info {
                     @include flexDisplay();
@@ -199,9 +229,10 @@ body {
                             width: 75%;
                             height: 75%;
                             border-radius: 15px;
-                            box-shadow: 1px 1px 10px $main-orange;
+                            box-shadow: 2px 3px 10px grey;
                             &:hover {
                                 transform: scale(1.025);
+                                box-shadow: 2px 3px 10px $main-orange;
                             }
                         }
                         p {
