@@ -165,7 +165,7 @@ body .container .page-body .about {
   background: linear-gradient(180deg, #fceedc, #fadfc4);
   color: #EE4E34;
   width: 100vw;
-  min-height: 50vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
